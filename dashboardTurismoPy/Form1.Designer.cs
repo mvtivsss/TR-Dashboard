@@ -43,7 +43,7 @@ namespace dashboardTurismoPy
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(82, 57);
+            this.chart1.Location = new System.Drawing.Point(193, 12);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -55,7 +55,7 @@ namespace dashboardTurismoPy
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(623, 393);
+            this.button1.Location = new System.Drawing.Point(334, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 1;

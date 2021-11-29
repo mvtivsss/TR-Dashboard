@@ -37,5 +37,12 @@ namespace dashboardTurismoPy.Shared
             JToken parseJson = JToken.Parse(jsonStr);
             return parseJson.ToString(Formatting.Indented);
         }
+
+        public static string CountJson(string jsonStr)
+        {
+            JObject jObj = (JObject)JsonConvert.DeserializeObject(jsonStr);
+            int count = jObj.Count;
+            return Convert.ToString(count);
+        }
     }
 }

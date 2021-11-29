@@ -21,7 +21,8 @@ namespace dashboardTurismoPy
         private async void button2_Click(object sender, EventArgs e)
         {
             var response = await RestHelper.getAll();
-            txtResponse.Text = RestHelper.BeautifyJson(response);
+            txtResponse.Text = RestHelper.BeautifyJson(response) +"TOTAL: "+ RestHelper.CountJson(response);
+
         }
     }
 }
