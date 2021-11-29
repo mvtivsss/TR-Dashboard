@@ -1,0 +1,14 @@
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\bin\Debug\dashboardTurismoPy.exe.config
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\bin\Debug\dashboardTurismoPy.exe
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\bin\Debug\dashboardTurismoPy.pdb
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.csproj.AssemblyReference.cache
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.CallAPI.resources
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.Form1.resources
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.Properties.Resources.resources
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.csproj.GenerateResource.cache
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.csproj.CoreCompileInputs.cache
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.exe
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.pdb
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\bin\Debug\Newtonsoft.Json.dll
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\bin\Debug\Newtonsoft.Json.xml
+C:\Users\matim\Desktop\turismoPyDashboard\dashboardTurismoPy\obj\Debug\dashboardTurismoPy.csproj.CopyComplete
