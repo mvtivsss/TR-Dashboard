@@ -32,10 +32,6 @@ namespace dashboardTurismoPy
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            this.graficoGeneral = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ReserveClient = new System.Windows.Forms.Button();
             this.ReservePrice = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -46,26 +42,8 @@ namespace dashboardTurismoPy
             this.graficogen = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.sendEmail = new System.Windows.Forms.Button();
             this.txtEmailTo = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.graficoGeneral)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.graficogen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // graficoGeneral
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.graficoGeneral.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.graficoGeneral.Legends.Add(legend1);
-            this.graficoGeneral.Location = new System.Drawing.Point(25, 366);
-            this.graficoGeneral.Name = "graficoGeneral";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.graficoGeneral.Series.Add(series1);
-            this.graficoGeneral.Size = new System.Drawing.Size(95, 66);
-            this.graficoGeneral.TabIndex = 0;
-            this.graficoGeneral.Text = "chart1";
-            this.graficoGeneral.Visible = false;
             // 
             // ReserveClient
             // 
@@ -135,19 +113,20 @@ namespace dashboardTurismoPy
             // 
             // graficogen
             // 
-            chartArea2.Name = "ChartArea1";
-            this.graficogen.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.graficogen.Legends.Add(legend2);
-            this.graficogen.Location = new System.Drawing.Point(149, 41);
+            chartArea1.Name = "ChartArea1";
+            this.graficogen.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.graficogen.Legends.Add(legend1);
+            this.graficogen.Location = new System.Drawing.Point(25, 41);
             this.graficogen.Name = "graficogen";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Area;
-            series2.IsValueShownAsLabel = true;
-            series2.Legend = "Legend1";
-            series2.Name = "ReservaMes";
-            this.graficogen.Series.Add(series2);
-            this.graficogen.Size = new System.Drawing.Size(639, 391);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.LegendText = "Prueba";
+            series1.Name = "ReservaMes";
+            this.graficogen.Series.Add(series1);
+            this.graficogen.Size = new System.Drawing.Size(763, 404);
             this.graficogen.TabIndex = 8;
             this.graficogen.Text = "chart1";
             // 
@@ -183,10 +162,8 @@ namespace dashboardTurismoPy
             this.Controls.Add(this.button3);
             this.Controls.Add(this.ReservePrice);
             this.Controls.Add(this.ReserveClient);
-            this.Controls.Add(this.graficoGeneral);
             this.Name = "FormGraficos";
             this.Text = "FormGraficos";
-            ((System.ComponentModel.ISupportInitialize)(this.graficoGeneral)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.graficogen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,8 +171,6 @@ namespace dashboardTurismoPy
         }
 
         #endregion
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart graficoGeneral;
         private System.Windows.Forms.Button ReserveClient;
         private System.Windows.Forms.Button ReservePrice;
         private System.Windows.Forms.Button button3;

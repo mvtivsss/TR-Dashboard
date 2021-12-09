@@ -41,49 +41,39 @@ namespace dashboardTurismoPy
             //    a.Add(new Estadistica(Convert.ToInt32(item.ClientId),Convert.ToInt32(item.TotalReserve)));
 
             //}
-            //ReservaMes.DataSource = a;
-            //ReservaMes.Series["ReservaMes"].XValueMember = "Year";
-            //ReservaMes.Series["ReservaMes"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            //ReservaMes.Series["ReservaMes"].YValueMembers = "Total";
-            //ReservaMes.Series["ReservaMes"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            
+            
             graficogen.Titles.Clear();
             graficogen.Series.Clear();
             graficogen.ResetAutoValues();
-            graficogen.Series.Add("ReservaMes");
-            graficogen.Series["ReservaMes"].ChartType = SeriesChartType.Area;
+            graficogen.Series.Add("ReservaMes").IsVisibleInLegend = false;
+            graficogen.Series["ReservaMes"].ChartType = SeriesChartType.Bar;
             graficogen.Text = "CantidadReservasMes";
-            graficogen.Series["ReservaMes"].Points.AddXY("ENERO", 34);
-            graficogen.Series["ReservaMes"].Points.AddXY("FEBRERO", 53);
-            graficogen.Series["ReservaMes"].Points.AddXY("MARZO", 13);
-            graficogen.Series["ReservaMes"].Points.AddXY("ABRIL", 22);
-            graficogen.Series["ReservaMes"].Points.AddXY("MAYO", 48);
-            graficogen.Series["ReservaMes"].Points.AddXY("JUNIO", 31);
-            graficogen.Series["ReservaMes"].Points.AddXY("JULIO", 85);
+            graficogen.Titles.Add("Cantidad de reservas por año");
+            
+            //graficogen.Series["ReservaMes"].XValueMember = "Year";
+            //graficogen.Series["ReservaMes"].XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            //graficogen.Series["ReservaMes"].YValueMembers = "Total";
+            //graficogen.Series["ReservaMes"].YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+
+            //graficogen.Series["ReservaMes"].Points.AddXY("ENERO", 34);
+            //graficogen.Series["ReservaMes"].Points.AddXY("FEBRERO", 53);
+            //graficogen.Series["ReservaMes"].Points.AddXY("MARZO", 13);
+            //graficogen.Series["ReservaMes"].Points.AddXY("ABRIL", 22);
+            //graficogen.Series["ReservaMes"].Points.AddXY("MAYO", 48);
+            //graficogen.Series["ReservaMes"].Points.AddXY("JUNIO", 31);
+            //graficogen.Series["ReservaMes"].Points.AddXY("JULIO", 85);
             graficogen.Series["ReservaMes"].Points.AddXY("AGOSTO", 30);
             graficogen.Series["ReservaMes"].Points.AddXY("SEPTIEMBRE", 50);
             graficogen.Series["ReservaMes"].Points.AddXY("OCTUBRE", 23);
             graficogen.Series["ReservaMes"].Points.AddXY("NOVIEMBRE", 65);
             graficogen.Series["ReservaMes"].Points.AddXY("DICIEMBRE", 100);
+            graficogen.Palette = ChartColorPalette.SeaGreen;
+            graficogen.Series["ReservaMes"].ResetIsValueShownAsLabel();
+            graficogen.Series[0].Color.ToArgb();
 
+            graficogen.Update();
             MessageBox.Show("Grafico Generado Correctamente ! ");
-            ////string[] series = {"ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", "OCTUBRE", "NOVIEMBRE","DICIEMBRE" };
-            ////int[] puntos = {50 ,13,25,57,40,36,44,57,68,34,90,95};
-
-            ////graficogen.DataSource = series;
-            ////graficogen.Series["ReservaMes"].YValueMembers = "Año";
-
-            ////graficogen.Palette = ChartColorPalette.SeaGreen;
-            ////graficogen.Titles.Add("Reserva por año");
-
-            ////for (int i = 0; i < series.Length; i++)
-            ////{
-            ////    Series serie = graficogen.Series.Add(series[i]);
-
-            ////    serie.Label = puntos[i].ToString();
-            ////    serie.Points.Add(puntos[i]);
-            ////}
-            ///
-
         }
 
         private async void ReservePrice_Click(object sender, EventArgs e)
@@ -96,23 +86,25 @@ namespace dashboardTurismoPy
                 graficogen.Titles.Clear();
                 graficogen.Series.Clear();
                 graficogen.ResetAutoValues();
-                graficogen.Series.Add("ReservaPrecio");
+                graficogen.Series.Add("ReservaPrecio").IsVisibleInLegend = false;
                 graficogen.Titles.Add("Total de reservas por año");
                 graficogen.Text = "TotalReservasAño";
                 graficogen.Series["ReservaPrecio"].ChartType = SeriesChartType.Area;
-                graficogen.Series["ReservaPrecio"].Points.AddXY("ENERO", item.TotalReserve);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("FEBRERO", 2342340);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("MARZO", 6564440);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("ABRIL", 1233000);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("MAYO", 343425);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("JUNIO", 354500);
-                graficogen.Series["ReservaPrecio"].Points.AddXY("JULIO", 2342354);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("ENERO", item.TotalReserve);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("FEBRERO", 2342340);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("MARZO", 6564440);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("ABRIL", 1233000);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("MAYO", 343425);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("JUNIO", 354500);
+                //graficogen.Series["ReservaPrecio"].Points.AddXY("JULIO", 2342354);
                 graficogen.Series["ReservaPrecio"].Points.AddXY("AGOSTO", 435345);
                 graficogen.Series["ReservaPrecio"].Points.AddXY("SEPTIEMBRE", 5000000);
                 graficogen.Series["ReservaPrecio"].Points.AddXY("OCTUBRE", 2300000);
                 graficogen.Series["ReservaPrecio"].Points.AddXY("NOVIEMBRE", 6500000);
                 graficogen.Series["ReservaPrecio"].Points.AddXY("DICIEMBRE", 10000000);
+                graficogen.Palette = ChartColorPalette.SeaGreen;
                 graficogen.Update();
+
                 MessageBox.Show("Grafico Generado Correctamente ! ");
             }
         }
@@ -139,8 +131,13 @@ namespace dashboardTurismoPy
             //Save and close PDF document
             if (!File.Exists(imagepath + graficogen.Text + ".pdf"))
             {
-                document.Save(imagepath + graficogen.Text + ".pdf");
+                MessageBox.Show("Pdf creado satisfactoriamente !");
             }
+            else
+            {
+                MessageBox.Show("Pdf Actualizado !");
+            }
+            document.Save(imagepath + graficogen.Text + ".pdf");
             document.Close(true);
         }
 
@@ -187,16 +184,24 @@ namespace dashboardTurismoPy
             Msg.Body = _body;
             string imagepath = Path.Combine(Application.StartupPath, "..//..//ImagesPDF//TotalReservasAño.jpg");
             //string folder = Path.GetFileName(Application.StartupPath + "..//..//ImagesPDF/");
+            string[] allfiles = Directory.GetFiles("../../ImagesPDF/", "*.*", SearchOption.AllDirectories);
             Attachment data = new Attachment(imagepath);
             
             // Add time stamp information for the file.
-            ContentDisposition disposition = data.ContentDisposition;
-            disposition.CreationDate = System.IO.File.GetCreationTime(imagepath);
-            disposition.ModificationDate = System.IO.File.GetLastWriteTime(imagepath);
-            disposition.ReadDate = System.IO.File.GetLastAccessTime(imagepath);
+            //ContentDisposition disposition = data.ContentDisposition;
+            //disposition.CreationDate = System.IO.File.GetCreationTime(imagepath);
+            //disposition.ModificationDate = System.IO.File.GetLastWriteTime(imagepath);
+            //disposition.ReadDate = System.IO.File.GetLastAccessTime(imagepath);
             
             // Add the file attachment to this email message.
-            Msg.Attachments.Add(data);
+            
+            foreach (string item in allfiles)
+            {
+                Attachment data1 = new Attachment(item);
+                MessageBox.Show(item);
+                Msg.Attachments.Add(data1);
+            }
+            
             // Send our email.
             client.Send(Msg);
         }
