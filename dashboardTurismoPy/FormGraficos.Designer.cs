@@ -151,6 +151,8 @@ namespace dashboardTurismoPy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::dashboardTurismoPy.Properties.Resources.Fondo2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 547);
             this.Controls.Add(this.txtEmailTo);
             this.Controls.Add(this.sendEmail);

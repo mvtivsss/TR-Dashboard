@@ -21,29 +21,29 @@ namespace dashboardTurismoPy
 
         private async void graficosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var departments = await RestHelper.getAllDepartments();
-            var reservations = await RestHelper.getAllReserves();
-            var users = await RestHelper.getAllUsers();
+            //var departments = await RestHelper.getAllDepartments();
+            //var reservations = await RestHelper.getAllReserves();
+            //var users = await RestHelper.getAllUsers();
             FormGraficos form = new FormGraficos();
             form.Show();
 
-            foreach (var item in reservations)
-            {
-                Console.WriteLine(item.DepartmentPrice);
-                //txtResponse.Text = reservations.Count().ToString();
-            }
+            //foreach (var item in reservations)
+            //{
+            //    Console.WriteLine(item.DepartmentPrice);
+            //    //txtResponse.Text = reservations.Count().ToString();
+            //}
 
-            foreach (var item in users)
-            {
-                Console.WriteLine(item.Rut.ToString());
-                //txtResponse.Text = users.Count().ToString();
-            }
+            //foreach (var item in users)
+            //{
+            //    Console.WriteLine(item.Rut.ToString());
+            //    //txtResponse.Text = users.Count().ToString();
+            //}
 
-            foreach (var item in departments)
-            {
-                //txtResponse.Text = departments.Count().ToString();
-                Console.WriteLine(item.Address.ToString());
-            }
+            //foreach (var item in departments)
+            //{
+            //    //txtResponse.Text = departments.Count().ToString();
+            //    Console.WriteLine(item.Address.ToString());
+            //}
         }
     }
 }

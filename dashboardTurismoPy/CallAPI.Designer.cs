@@ -58,20 +58,22 @@ namespace dashboardTurismoPy
             // graficosToolStripMenuItem
             // 
             this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
-            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.graficosToolStripMenuItem.Text = "Graficos";
             this.graficosToolStripMenuItem.Click += new System.EventHandler(this.graficosToolStripMenuItem_Click);
             // 
             // pDFToolStripMenuItem
             // 
             this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.pDFToolStripMenuItem.Text = "PDF";
             // 
             // CallAPI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::dashboardTurismoPy.Properties.Resources.Fondo1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
