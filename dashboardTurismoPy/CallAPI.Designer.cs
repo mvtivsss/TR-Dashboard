@@ -32,7 +32,6 @@ namespace dashboardTurismoPy
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.graficosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pDFToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,8 +48,7 @@ namespace dashboardTurismoPy
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.graficosToolStripMenuItem,
-            this.pDFToolStripMenuItem});
+            this.graficosToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(79, 20);
             this.toolStripMenuItem1.Text = "Estadisticas";
@@ -58,15 +56,9 @@ namespace dashboardTurismoPy
             // graficosToolStripMenuItem
             // 
             this.graficosToolStripMenuItem.Name = "graficosToolStripMenuItem";
-            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.graficosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.graficosToolStripMenuItem.Text = "Graficos";
             this.graficosToolStripMenuItem.Click += new System.EventHandler(this.graficosToolStripMenuItem_Click);
-            // 
-            // pDFToolStripMenuItem
-            // 
-            this.pDFToolStripMenuItem.Name = "pDFToolStripMenuItem";
-            this.pDFToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.pDFToolStripMenuItem.Text = "PDF";
             // 
             // CallAPI
             // 
@@ -90,6 +82,5 @@ namespace dashboardTurismoPy
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem graficosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pDFToolStripMenuItem;
     }
 }

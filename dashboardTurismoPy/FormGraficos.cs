@@ -80,8 +80,8 @@ namespace dashboardTurismoPy
         {
             var reservations = await RestHelper.getAllReserves();
             //List<Estadistica> a = new List<Estadistica>();
-            foreach (var item in reservations)
-            {
+            //foreach (var item in reservations)
+            //{
                 //a.Add(new Estadistica());
                 graficogen.Titles.Clear();
                 graficogen.Series.Clear();
@@ -106,7 +106,7 @@ namespace dashboardTurismoPy
                 graficogen.Update();
 
                 MessageBox.Show("Grafico Generado Correctamente ! ");
-            }
+            //}
         }
 
         private void exportToPdf_Click(object sender, EventArgs e)
